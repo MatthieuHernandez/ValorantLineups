@@ -1,11 +1,14 @@
+using Microsoft.VisualBasic;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace ValorantLineups
 {
     public partial class Form1 : Form
     {
         private Lineup lineup;
+        private List<KeyHandler> ghk;
 
         public Form1()
         {
@@ -17,6 +20,27 @@ namespace ValorantLineups
             this.lineup = new Lineup(this.PictureBox);
             this.LeftButton.Parent = this.PictureBox;
             this.RightButton.Parent = this.PictureBox;
+
+            // Control keys
+            this.TabControl.KeyDown += KeyHelper.DisableKey;
+            ghk = new List<KeyHandler>
+            {
+                new (Keys.F1, this, LeftButton_Click),
+                new (Keys.F2, this, RightButton_Click),
+            };
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            Console.WriteLine(m.Msg);
+            if (m.Msg == Constants.WM_HOTKEY_MSG_ID)
+                foreach (var keyHandler in this.ghk)
+                {
+                    if (m.WParam.ToInt32() == keyHandler.GetHashCode())
+                        keyHandler.action.Invoke(null, null);
+                }
+                
+            base.WndProc(ref m);
         }
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,9 +76,17 @@ namespace ValorantLineups
 
         }
 
+        private void AscentButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedMap = "Ascent";
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.BackButton.Parent = this.PictureBox;
+        }
+
         private void RightButton_Click(object sender, EventArgs e) => this.lineup.NextLineup();
 
         private void LeftButton_Click(object sender, EventArgs e) => this.lineup.PreviousLineup();
-
     }
 }
