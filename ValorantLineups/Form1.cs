@@ -85,6 +85,15 @@ namespace ValorantLineups
             this.BackButton.Parent = this.PictureBox;
         }
 
+        private void FractureButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedMap = "Fracture";
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.BackButton.Parent = this.PictureBox;
+        }
+
         private void RightButton_Click(object sender, EventArgs e) => this.lineup.NextLineup();
 
         private void LeftButton_Click(object sender, EventArgs e) => this.lineup.PreviousLineup();

@@ -36,6 +36,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.FractureButton = new System.Windows.Forms.Button();
             this.AscentButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.PictureBox();
             this.HavenButtton = new System.Windows.Forms.Button();
@@ -68,7 +69,7 @@
             this.LeftButton.Image = ((System.Drawing.Image)(resources.GetObject("LeftButton.Image")));
             this.LeftButton.Location = new System.Drawing.Point(260, 424);
             this.LeftButton.Name = "LeftButton";
-            this.LeftButton.Size = new System.Drawing.Size(110, 110);
+            this.LeftButton.Size = new System.Drawing.Size(100, 100);
             this.LeftButton.TabIndex = 2;
             this.LeftButton.TabStop = false;
             this.LeftButton.Click += new System.EventHandler(this.LeftButton_Click);
@@ -80,7 +81,7 @@
             this.RightButton.Image = ((System.Drawing.Image)(resources.GetObject("RightButton.Image")));
             this.RightButton.Location = new System.Drawing.Point(410, 424);
             this.RightButton.Name = "RightButton";
-            this.RightButton.Size = new System.Drawing.Size(110, 110);
+            this.RightButton.Size = new System.Drawing.Size(100, 100);
             this.RightButton.TabIndex = 2;
             this.RightButton.TabStop = false;
             this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
@@ -112,6 +113,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tabPage2.Controls.Add(this.FractureButton);
             this.tabPage2.Controls.Add(this.AscentButton);
             this.tabPage2.Controls.Add(this.BackButton);
             this.tabPage2.Controls.Add(this.HavenButtton);
@@ -122,9 +124,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
+            // FractureButton
+            // 
+            this.FractureButton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FractureButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.FractureButton.Image = ((System.Drawing.Image)(resources.GetObject("FractureButton.Image")));
+            this.FractureButton.Location = new System.Drawing.Point(410, 4);
+            this.FractureButton.Margin = new System.Windows.Forms.Padding(0);
+            this.FractureButton.Name = "FractureButton";
+            this.FractureButton.Size = new System.Drawing.Size(202, 118);
+            this.FractureButton.TabIndex = 3;
+            this.FractureButton.Text = "FRACTURE";
+            this.FractureButton.UseVisualStyleBackColor = true;
+            this.FractureButton.Click += new System.EventHandler(this.FractureButton_Click);
+            // 
             // AscentButton
             // 
-            this.AscentButton.Font = new System.Drawing.Font("Carlito", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AscentButton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.AscentButton.ForeColor = System.Drawing.SystemColors.Control;
             this.AscentButton.Image = ((System.Drawing.Image)(resources.GetObject("AscentButton.Image")));
             this.AscentButton.Location = new System.Drawing.Point(208, 4);
@@ -150,7 +166,7 @@
             // 
             // HavenButtton
             // 
-            this.HavenButtton.Font = new System.Drawing.Font("Carlito", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.HavenButtton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.HavenButtton.ForeColor = System.Drawing.SystemColors.Control;
             this.HavenButtton.Image = ((System.Drawing.Image)(resources.GetObject("HavenButtton.Image")));
             this.HavenButtton.Location = new System.Drawing.Point(4, 4);
@@ -244,5 +260,6 @@
         private PictureBox PictureBox;
         private ImageList lineupList;
         private Button AscentButton;
+        private Button FractureButton;
     }
 }
