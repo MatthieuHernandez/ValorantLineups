@@ -1,8 +1,3 @@
-using Microsoft.VisualBasic;
-using System.Reflection.Emit;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
-
 namespace ValorantLineups
 {
     public partial class Form1 : Form
@@ -39,7 +34,7 @@ namespace ValorantLineups
                     if (m.WParam.ToInt32() == keyHandler.GetHashCode())
                         keyHandler.action.Invoke(null, null);
                 }
-                
+
             base.WndProc(ref m);
         }
 
@@ -56,6 +51,13 @@ namespace ValorantLineups
         {
             this.TabControl.SelectedIndex++;
             this.lineup.SelectedAgent = "Killjoy";
+        }
+
+
+        private void OmenButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedAgent = "Omen";
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -89,6 +91,14 @@ namespace ValorantLineups
         {
             this.TabControl.SelectedIndex++;
             this.lineup.SelectedMap = "Fracture";
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.BackButton.Parent = this.PictureBox;
+        }
+        private void SplitButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedMap = "Split";
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             this.BackButton.Parent = this.PictureBox;

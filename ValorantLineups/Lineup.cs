@@ -23,6 +23,7 @@ namespace ValorantLineups
             {
                 this.lineupIndex = 0;
                 this.selectedMap = value;
+                this.LoadLineup();
             }
         }
 
@@ -51,7 +52,7 @@ namespace ValorantLineups
             if (lineupIndex <= 0)
             {
                 lineupIndex = 0;
-                this.lineupBox.Image = new Bitmap("./images/Black.png");
+                this.lineupBox.Image = new Bitmap("./screenshots/Black.png");
             }
 
             else

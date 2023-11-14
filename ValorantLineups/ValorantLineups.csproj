@@ -25,7 +25,6 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy ..\images .\bin\$(Configuration)\net6.0-windows\images\ /d /s /e" />
     <Exec Command="xcopy ..\screenshots .\bin\$(Configuration)\net6.0-windows\screenshots\ /d /s /e" />
   </Target>
 

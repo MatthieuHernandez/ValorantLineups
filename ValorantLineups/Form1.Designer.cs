@@ -28,222 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LeftButton = new System.Windows.Forms.PictureBox();
-            this.RightButton = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.FractureButton = new System.Windows.Forms.Button();
-            this.AscentButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.PictureBox();
-            this.HavenButtton = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.KilljoyButton = new System.Windows.Forms.Button();
-            this.TabControl = new System.Windows.Forms.TabControl();
-            this.lineupList = new System.Windows.Forms.ImageList(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.LeftButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightButton)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
-            this.tabPage1.SuspendLayout();
-            this.TabControl.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            LeftButton = new PictureBox();
+            RightButton = new PictureBox();
+            tabPage3 = new TabPage();
+            PictureBox = new PictureBox();
+            tabPage2 = new TabPage();
+            SplitButton = new Button();
+            FractureButton = new Button();
+            AscentButton = new Button();
+            BackButton = new PictureBox();
+            HavenButtton = new Button();
+            tabPage1 = new TabPage();
+            OmenButton = new Button();
+            KilljoyButton = new Button();
+            TabControl = new TabControl();
+            lineupList = new ImageList(components);
+            ((System.ComponentModel.ISupportInitialize)LeftButton).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RightButton).BeginInit();
+            tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PictureBox).BeginInit();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BackButton).BeginInit();
+            tabPage1.SuspendLayout();
+            TabControl.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 561);
-            this.panel1.TabIndex = 0;
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(784, 561);
+            panel1.TabIndex = 0;
             // 
             // LeftButton
             // 
-            this.LeftButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.LeftButton.BackColor = System.Drawing.Color.Transparent;
-            this.LeftButton.Image = ((System.Drawing.Image)(resources.GetObject("LeftButton.Image")));
-            this.LeftButton.Location = new System.Drawing.Point(260, 424);
-            this.LeftButton.Name = "LeftButton";
-            this.LeftButton.Size = new System.Drawing.Size(100, 100);
-            this.LeftButton.TabIndex = 2;
-            this.LeftButton.TabStop = false;
-            this.LeftButton.Click += new System.EventHandler(this.LeftButton_Click);
+            LeftButton.Anchor = AnchorStyles.Bottom;
+            LeftButton.BackColor = Color.Transparent;
+            LeftButton.Image = (Image)resources.GetObject("LeftButton.Image");
+            LeftButton.Location = new Point(260, 424);
+            LeftButton.Name = "LeftButton";
+            LeftButton.Size = new Size(100, 100);
+            LeftButton.TabIndex = 2;
+            LeftButton.TabStop = false;
+            LeftButton.Click += LeftButton_Click;
             // 
             // RightButton
             // 
-            this.RightButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.RightButton.BackColor = System.Drawing.Color.Transparent;
-            this.RightButton.Image = ((System.Drawing.Image)(resources.GetObject("RightButton.Image")));
-            this.RightButton.Location = new System.Drawing.Point(410, 424);
-            this.RightButton.Name = "RightButton";
-            this.RightButton.Size = new System.Drawing.Size(100, 100);
-            this.RightButton.TabIndex = 2;
-            this.RightButton.TabStop = false;
-            this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
+            RightButton.Anchor = AnchorStyles.Bottom;
+            RightButton.BackColor = Color.Transparent;
+            RightButton.Image = (Image)resources.GetObject("RightButton.Image");
+            RightButton.Location = new Point(410, 424);
+            RightButton.Name = "RightButton";
+            RightButton.Size = new Size(100, 100);
+            RightButton.TabIndex = 2;
+            RightButton.TabStop = false;
+            RightButton.Click += RightButton_Click;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.RightButton);
-            this.tabPage3.Controls.Add(this.LeftButton);
-            this.tabPage3.Controls.Add(this.PictureBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(776, 533);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            tabPage3.Controls.Add(RightButton);
+            tabPage3.Controls.Add(LeftButton);
+            tabPage3.Controls.Add(PictureBox);
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Size = new Size(776, 533);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "tabPage3";
             // 
             // PictureBox
             // 
-            this.PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PictureBox.BackColor = System.Drawing.Color.Black;
-            this.PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.PictureBox.Margin = new System.Windows.Forms.Padding(0);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(1920, 1080);
-            this.PictureBox.TabIndex = 3;
-            this.PictureBox.TabStop = false;
+            PictureBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            PictureBox.BackColor = Color.Black;
+            PictureBox.Location = new Point(0, 0);
+            PictureBox.Margin = new Padding(0);
+            PictureBox.Name = "PictureBox";
+            PictureBox.Size = new Size(1920, 1080);
+            PictureBox.TabIndex = 3;
+            PictureBox.TabStop = false;
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tabPage2.Controls.Add(this.FractureButton);
-            this.tabPage2.Controls.Add(this.AscentButton);
-            this.tabPage2.Controls.Add(this.BackButton);
-            this.tabPage2.Controls.Add(this.HavenButtton);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(776, 533);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            tabPage2.BackColor = SystemColors.ControlDark;
+            tabPage2.Controls.Add(SplitButton);
+            tabPage2.Controls.Add(FractureButton);
+            tabPage2.Controls.Add(AscentButton);
+            tabPage2.Controls.Add(BackButton);
+            tabPage2.Controls.Add(HavenButtton);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Margin = new Padding(0);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Size = new Size(776, 533);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            // 
+            // SplitButton
+            // 
+            SplitButton.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            SplitButton.ForeColor = SystemColors.Control;
+            SplitButton.Image = (Image)resources.GetObject("SplitButton.Image");
+            SplitButton.Location = new Point(4, 124);
+            SplitButton.Margin = new Padding(0);
+            SplitButton.Name = "SplitButton";
+            SplitButton.Size = new Size(202, 118);
+            SplitButton.TabIndex = 4;
+            SplitButton.Text = "SPLIT";
+            SplitButton.UseVisualStyleBackColor = true;
+            SplitButton.Click += SplitButton_Click;
             // 
             // FractureButton
             // 
-            this.FractureButton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FractureButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.FractureButton.Image = ((System.Drawing.Image)(resources.GetObject("FractureButton.Image")));
-            this.FractureButton.Location = new System.Drawing.Point(410, 4);
-            this.FractureButton.Margin = new System.Windows.Forms.Padding(0);
-            this.FractureButton.Name = "FractureButton";
-            this.FractureButton.Size = new System.Drawing.Size(202, 118);
-            this.FractureButton.TabIndex = 3;
-            this.FractureButton.Text = "FRACTURE";
-            this.FractureButton.UseVisualStyleBackColor = true;
-            this.FractureButton.Click += new System.EventHandler(this.FractureButton_Click);
+            FractureButton.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            FractureButton.ForeColor = SystemColors.Control;
+            FractureButton.Image = (Image)resources.GetObject("FractureButton.Image");
+            FractureButton.Location = new Point(410, 4);
+            FractureButton.Margin = new Padding(0);
+            FractureButton.Name = "FractureButton";
+            FractureButton.Size = new Size(202, 118);
+            FractureButton.TabIndex = 3;
+            FractureButton.Text = "FRACTURE";
+            FractureButton.UseVisualStyleBackColor = true;
+            FractureButton.Click += FractureButton_Click;
             // 
             // AscentButton
             // 
-            this.AscentButton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AscentButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.AscentButton.Image = ((System.Drawing.Image)(resources.GetObject("AscentButton.Image")));
-            this.AscentButton.Location = new System.Drawing.Point(208, 4);
-            this.AscentButton.Margin = new System.Windows.Forms.Padding(0);
-            this.AscentButton.Name = "AscentButton";
-            this.AscentButton.Size = new System.Drawing.Size(202, 118);
-            this.AscentButton.TabIndex = 2;
-            this.AscentButton.Text = "ASCENT";
-            this.AscentButton.UseVisualStyleBackColor = true;
-            this.AscentButton.Click += new System.EventHandler(this.AscentButton_Click);
+            AscentButton.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            AscentButton.ForeColor = SystemColors.Control;
+            AscentButton.Image = (Image)resources.GetObject("AscentButton.Image");
+            AscentButton.Location = new Point(208, 4);
+            AscentButton.Margin = new Padding(0);
+            AscentButton.Name = "AscentButton";
+            AscentButton.Size = new Size(202, 118);
+            AscentButton.TabIndex = 2;
+            AscentButton.Text = "ASCENT";
+            AscentButton.UseVisualStyleBackColor = true;
+            AscentButton.Click += AscentButton_Click;
             // 
             // BackButton
             // 
-            this.BackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BackButton.BackColor = System.Drawing.Color.Transparent;
-            this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(641, 398);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(138, 138);
-            this.BackButton.TabIndex = 0;
-            this.BackButton.TabStop = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            BackButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BackButton.BackColor = Color.Transparent;
+            BackButton.Image = (Image)resources.GetObject("BackButton.Image");
+            BackButton.Location = new Point(641, 398);
+            BackButton.Name = "BackButton";
+            BackButton.Size = new Size(138, 138);
+            BackButton.TabIndex = 0;
+            BackButton.TabStop = false;
+            BackButton.Click += BackButton_Click;
             // 
             // HavenButtton
             // 
-            this.HavenButtton.Font = new System.Drawing.Font("Carlito", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.HavenButtton.ForeColor = System.Drawing.SystemColors.Control;
-            this.HavenButtton.Image = ((System.Drawing.Image)(resources.GetObject("HavenButtton.Image")));
-            this.HavenButtton.Location = new System.Drawing.Point(4, 4);
-            this.HavenButtton.Margin = new System.Windows.Forms.Padding(0);
-            this.HavenButtton.Name = "HavenButtton";
-            this.HavenButtton.Size = new System.Drawing.Size(202, 118);
-            this.HavenButtton.TabIndex = 1;
-            this.HavenButtton.Text = "HAVEN";
-            this.HavenButtton.UseVisualStyleBackColor = true;
-            this.HavenButtton.Click += new System.EventHandler(this.HavenButton_Click);
+            HavenButtton.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            HavenButtton.ForeColor = SystemColors.Control;
+            HavenButtton.Image = (Image)resources.GetObject("HavenButtton.Image");
+            HavenButtton.Location = new Point(4, 4);
+            HavenButtton.Margin = new Padding(0);
+            HavenButtton.Name = "HavenButtton";
+            HavenButtton.Size = new Size(202, 118);
+            HavenButtton.TabIndex = 1;
+            HavenButtton.Text = "HAVEN";
+            HavenButtton.UseVisualStyleBackColor = true;
+            HavenButtton.Click += HavenButton_Click;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.tabPage1.Controls.Add(this.KilljoyButton);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(776, 533);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            tabPage1.BackColor = SystemColors.ControlDark;
+            tabPage1.Controls.Add(OmenButton);
+            tabPage1.Controls.Add(KilljoyButton);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Margin = new Padding(0);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Size = new Size(776, 533);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            // 
+            // OmenButton
+            // 
+            OmenButton.AccessibleRole = AccessibleRole.None;
+            OmenButton.Image = (Image)resources.GetObject("OmenButton.Image");
+            OmenButton.Location = new Point(220, 4);
+            OmenButton.Name = "OmenButton";
+            OmenButton.Size = new Size(210, 210);
+            OmenButton.TabIndex = 2;
+            OmenButton.UseVisualStyleBackColor = true;
+            OmenButton.Click += OmenButton_Click;
             // 
             // KilljoyButton
             // 
-            this.KilljoyButton.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.KilljoyButton.Image = ((System.Drawing.Image)(resources.GetObject("KilljoyButton.Image")));
-            this.KilljoyButton.Location = new System.Drawing.Point(4, 4);
-            this.KilljoyButton.Name = "KilljoyButton";
-            this.KilljoyButton.Size = new System.Drawing.Size(210, 210);
-            this.KilljoyButton.TabIndex = 1;
-            this.KilljoyButton.UseVisualStyleBackColor = true;
-            this.KilljoyButton.Click += new System.EventHandler(this.KilljoyButton_Click);
+            KilljoyButton.AccessibleRole = AccessibleRole.None;
+            KilljoyButton.Image = (Image)resources.GetObject("KilljoyButton.Image");
+            KilljoyButton.Location = new Point(4, 4);
+            KilljoyButton.Name = "KilljoyButton";
+            KilljoyButton.Size = new Size(210, 210);
+            KilljoyButton.TabIndex = 1;
+            KilljoyButton.UseVisualStyleBackColor = true;
+            KilljoyButton.Click += KilljoyButton_Click;
             // 
             // TabControl
             // 
-            this.TabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TabControl.Controls.Add(this.tabPage1);
-            this.TabControl.Controls.Add(this.tabPage2);
-            this.TabControl.Controls.Add(this.tabPage3);
-            this.TabControl.ItemSize = new System.Drawing.Size(10, 20);
-            this.TabControl.Location = new System.Drawing.Point(0, 0);
-            this.TabControl.Margin = new System.Windows.Forms.Padding(0);
-            this.TabControl.Name = "TabControl";
-            this.TabControl.Padding = new System.Drawing.Point(0, 0);
-            this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(784, 561);
-            this.TabControl.TabIndex = 3;
-            this.TabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
+            TabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            TabControl.Controls.Add(tabPage1);
+            TabControl.Controls.Add(tabPage2);
+            TabControl.Controls.Add(tabPage3);
+            TabControl.ItemSize = new Size(10, 20);
+            TabControl.Location = new Point(0, 0);
+            TabControl.Margin = new Padding(0);
+            TabControl.Name = "TabControl";
+            TabControl.Padding = new Point(0, 0);
+            TabControl.SelectedIndex = 0;
+            TabControl.Size = new Size(784, 561);
+            TabControl.TabIndex = 3;
+            TabControl.SelectedIndexChanged += TabControl_SelectedIndexChanged;
             // 
             // lineupList
             // 
-            this.lineupList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.lineupList.ImageSize = new System.Drawing.Size(256, 256);
-            this.lineupList.TransparentColor = System.Drawing.Color.Transparent;
+            lineupList.ColorDepth = ColorDepth.Depth32Bit;
+            lineupList.ImageSize = new Size(256, 256);
+            lineupList.TransparentColor = Color.Transparent;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.TabControl);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Form1";
-            this.Text = "Valorant Lineups";
-            ((System.ComponentModel.ISupportInitialize)(this.LeftButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RightButton)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.TabControl.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 561);
+            Controls.Add(TabControl);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Name = "Form1";
+            Text = "Valorant Lineups";
+            ((System.ComponentModel.ISupportInitialize)LeftButton).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RightButton).EndInit();
+            tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)PictureBox).EndInit();
+            tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)BackButton).EndInit();
+            tabPage1.ResumeLayout(false);
+            TabControl.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -261,5 +285,7 @@
         private ImageList lineupList;
         private Button AscentButton;
         private Button FractureButton;
+        private Button OmenButton;
+        private Button SplitButton;
     }
 }
