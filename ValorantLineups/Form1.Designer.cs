@@ -46,6 +46,7 @@
             KilljoyButton = new Button();
             TabControl = new TabControl();
             lineupList = new ImageList(components);
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)LeftButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)RightButton).BeginInit();
             tabPage3.SuspendLayout();
@@ -113,6 +114,7 @@
             // tabPage2
             // 
             tabPage2.BackColor = SystemColors.ControlDark;
+            tabPage2.Controls.Add(button1);
             tabPage2.Controls.Add(SplitButton);
             tabPage2.Controls.Add(FractureButton);
             tabPage2.Controls.Add(AscentButton);
@@ -249,6 +251,20 @@
             lineupList.ImageSize = new Size(256, 256);
             lineupList.TransparentColor = Color.Transparent;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.Control;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(208, 124);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(202, 118);
+            button1.TabIndex = 5;
+            button1.Text = "BIND";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += BindButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -287,5 +303,6 @@
         private Button FractureButton;
         private Button OmenButton;
         private Button SplitButton;
+        private Button button1;
     }
 }

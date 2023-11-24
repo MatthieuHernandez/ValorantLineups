@@ -107,5 +107,14 @@ namespace ValorantLineups
         private void RightButton_Click(object sender, EventArgs e) => this.lineup.NextLineup();
 
         private void LeftButton_Click(object sender, EventArgs e) => this.lineup.PreviousLineup();
+
+        private void BindButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedMap = "Bind";
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.BackButton.Parent = this.PictureBox;
+        }
     }
 }
