@@ -36,17 +36,20 @@
             tabPage3 = new TabPage();
             PictureBox = new PictureBox();
             tabPage2 = new TabPage();
+            button2 = new Button();
+            button1 = new Button();
             SplitButton = new Button();
             FractureButton = new Button();
             AscentButton = new Button();
             BackButton = new PictureBox();
             HavenButtton = new Button();
             tabPage1 = new TabPage();
+            VyseButton = new Button();
             OmenButton = new Button();
             KilljoyButton = new Button();
             TabControl = new TabControl();
             lineupList = new ImageList(components);
-            button1 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)LeftButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)RightButton).BeginInit();
             tabPage3.SuspendLayout();
@@ -114,6 +117,8 @@
             // tabPage2
             // 
             tabPage2.BackColor = SystemColors.ControlDark;
+            tabPage2.Controls.Add(button3);
+            tabPage2.Controls.Add(button2);
             tabPage2.Controls.Add(button1);
             tabPage2.Controls.Add(SplitButton);
             tabPage2.Controls.Add(FractureButton);
@@ -126,6 +131,34 @@
             tabPage2.Size = new Size(776, 533);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.Control;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(410, 124);
+            button2.Margin = new Padding(0);
+            button2.Name = "button2";
+            button2.Size = new Size(202, 118);
+            button2.TabIndex = 6;
+            button2.Text = "PEARL";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += PearlButton_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.Control;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(208, 124);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(202, 118);
+            button1.TabIndex = 5;
+            button1.Text = "BIND";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += BindButton_Click;
             // 
             // SplitButton
             // 
@@ -198,6 +231,7 @@
             // tabPage1
             // 
             tabPage1.BackColor = SystemColors.ControlDark;
+            tabPage1.Controls.Add(VyseButton);
             tabPage1.Controls.Add(OmenButton);
             tabPage1.Controls.Add(KilljoyButton);
             tabPage1.Location = new Point(4, 24);
@@ -206,6 +240,17 @@
             tabPage1.Size = new Size(776, 533);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabPage1";
+            // 
+            // VyseButton
+            // 
+            VyseButton.AccessibleRole = AccessibleRole.None;
+            VyseButton.Image = (Image)resources.GetObject("VyseButton.Image");
+            VyseButton.Location = new Point(436, 4);
+            VyseButton.Name = "VyseButton";
+            VyseButton.Size = new Size(210, 210);
+            VyseButton.TabIndex = 3;
+            VyseButton.UseVisualStyleBackColor = true;
+            VyseButton.Click += VyseButton_Click;
             // 
             // OmenButton
             // 
@@ -251,19 +296,19 @@
             lineupList.ImageSize = new Size(256, 256);
             lineupList.TransparentColor = Color.Transparent;
             // 
-            // button1
+            // button3
             // 
-            button1.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.Control;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(208, 124);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Size = new Size(202, 118);
-            button1.TabIndex = 5;
-            button1.Text = "BIND";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += BindButton_Click;
+            button3.Font = new Font("Carlito", 28F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.Control;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(5, 242);
+            button3.Margin = new Padding(0);
+            button3.Name = "button3";
+            button3.Size = new Size(202, 118);
+            button3.TabIndex = 7;
+            button3.Text = "ABYSS";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += AbyssButton_Click;
             // 
             // Form1
             // 
@@ -304,5 +349,8 @@
         private Button OmenButton;
         private Button SplitButton;
         private Button button1;
+        private Button button2;
+        private Button VyseButton;
+        private Button button3;
     }
 }

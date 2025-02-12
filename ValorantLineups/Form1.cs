@@ -47,6 +47,10 @@ namespace ValorantLineups
             }
         }
 
+        private void RightButton_Click(object sender, EventArgs e) => this.lineup.NextLineup();
+
+        private void LeftButton_Click(object sender, EventArgs e) => this.lineup.PreviousLineup();
+
         private void KilljoyButton_Click(object sender, EventArgs e)
         {
             this.TabControl.SelectedIndex++;
@@ -60,6 +64,12 @@ namespace ValorantLineups
             this.lineup.SelectedAgent = "Omen";
         }
 
+        private void VyseButton_Click(object sender, EventArgs e)
+        {
+            this.TabControl.SelectedIndex++;
+            this.lineup.SelectedAgent = "Vyse";
+        }
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.TabControl.SelectedIndex--;
@@ -68,53 +78,27 @@ namespace ValorantLineups
             this.BackButton.BringToFront();
         }
 
-        private void HavenButton_Click(object sender, EventArgs e)
+        private void MapButton_Click(string name)
         {
             this.TabControl.SelectedIndex++;
-            this.lineup.SelectedMap = "Haven";
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.BackButton.Parent = this.PictureBox;
-
-        }
-
-        private void AscentButton_Click(object sender, EventArgs e)
-        {
-            this.TabControl.SelectedIndex++;
-            this.lineup.SelectedMap = "Ascent";
+            this.lineup.SelectedMap = name;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             this.BackButton.Parent = this.PictureBox;
         }
 
-        private void FractureButton_Click(object sender, EventArgs e)
-        {
-            this.TabControl.SelectedIndex++;
-            this.lineup.SelectedMap = "Fracture";
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.BackButton.Parent = this.PictureBox;
-        }
-        private void SplitButton_Click(object sender, EventArgs e)
-        {
-            this.TabControl.SelectedIndex++;
-            this.lineup.SelectedMap = "Split";
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.BackButton.Parent = this.PictureBox;
-        }
+        private void HavenButton_Click(object sender, EventArgs e) => MapButton_Click("Haven");
 
-        private void RightButton_Click(object sender, EventArgs e) => this.lineup.NextLineup();
+        private void AscentButton_Click(object sender, EventArgs e) => MapButton_Click("Ascent");
 
-        private void LeftButton_Click(object sender, EventArgs e) => this.lineup.PreviousLineup();
+        private void FractureButton_Click(object sender, EventArgs e) => MapButton_Click("Fracture");
 
-        private void BindButton_Click(object sender, EventArgs e)
-        {
-            this.TabControl.SelectedIndex++;
-            this.lineup.SelectedMap = "Bind";
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.BackButton.Parent = this.PictureBox;
-        }
+        private void SplitButton_Click(object sender, EventArgs e) => MapButton_Click("Fracture");
+
+        private void BindButton_Click(object sender, EventArgs e) => MapButton_Click("Bind");
+
+        private void PearlButton_Click(object sender, EventArgs e) => MapButton_Click("Pearl");
+
+        private void AbyssButton_Click(object sender, EventArgs e) => MapButton_Click("Abyss");
     }
 }
