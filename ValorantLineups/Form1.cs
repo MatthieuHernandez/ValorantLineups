@@ -93,7 +93,7 @@ namespace ValorantLineups
 
         private void FractureButton_Click(object sender, EventArgs e) => MapButton_Click("Fracture");
 
-        private void SplitButton_Click(object sender, EventArgs e) => MapButton_Click("Fracture");
+        private void SplitButton_Click(object sender, EventArgs e) => MapButton_Click("Split");
 
         private void BindButton_Click(object sender, EventArgs e) => MapButton_Click("Bind");
 
